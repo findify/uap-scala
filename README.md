@@ -1,15 +1,15 @@
-UA Parser Scala Library
+UA Parser Scala Library (findify fork)
 ======================
 
 This is the Scala implementation of [ua-parser](https://github.com/tobie/ua-parser).
 The implementation uses the shared regex patterns and overrides from regexes.yaml.
+Maintained by findify, as the original author seems dead.
 
-[![Build Status](https://travis-ci.org/ua-parser/uap-scala.png?branch=master)](https://travis-ci.org/ua-parser/uap-scala)
-
-Build:
+How to use with sbt:
 ------
 
-    sbt package
+    resolvers += Resolver.bintrayRepo("findify", "maven")
+    libraryDependencies += "io.findify" %% "uap-scala" % "1.0.0"
 
 Usage:
 --------
