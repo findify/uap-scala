@@ -25,8 +25,8 @@ import ua.parser.Parser
 Author:
 -------
 
-  * Piotr Adamski [@mcveat](https://twitter.com/mcveat)
-  * André Cardoso @belerophon
-  * Roman Grebennikov [@shuttie](https://twitter.com/public_void_grv), maven packaging
+  * Piotr Adamski [@mcveat](https://twitter.com/mcveat), original author
+  * [André Cardoso](https://github.com/belerophon), updating for the latest spec
+  * [Roman Grebennikov](https://github.com/shuttie), maven/bintray packaging
 
   Based on the java implementation by Steve Jiang [@sjiang](https://twitter.com/sjiang) and using agent data from BrowserScope
