@@ -26,5 +26,7 @@ Author:
 -------
 
   * Piotr Adamski [@mcveat](https://twitter.com/mcveat)
+  * André Cardoso @belerophon
+  * Roman Grebennikov [@shuttie](https://twitter.com/public_void_grv), maven packaging
 
   Based on the java implementation by Steve Jiang [@sjiang](https://twitter.com/sjiang) and using agent data from BrowserScope
