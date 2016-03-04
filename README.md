@@ -8,9 +8,14 @@ Maintained by findify, as the original author seems dead.
 How to use with sbt:
 ------
 
-    resolvers += Resolver.bintrayRepo("findify", "maven")
+For sbt >= 0.13.6 just plug-and-play:
+
     libraryDependencies += "io.findify" %% "uap-scala" % "1.0.0"
 
+For older versions you have to add a bintray jcenter resolver:
+    
+    resolvers += Resolver.jcenterRepo
+    
 Usage:
 --------
 ```scala
