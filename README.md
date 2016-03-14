@@ -10,7 +10,7 @@ How to use with sbt:
 
 For sbt >= 0.13.6 just plug-and-play:
 
-    libraryDependencies += "io.findify" %% "uap-scala" % "1.0.0"
+    libraryDependencies += "io.findify" %% "uap-scala" % "1.1.0"
 
 For older versions you have to add a bintray jcenter resolver:
     
