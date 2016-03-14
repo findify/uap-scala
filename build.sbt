@@ -2,13 +2,12 @@ name := "uap-scala"
 
 organization := "io.findify"
 
-version := "1.0.0"
+version := "1.1.0"
 
 scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
   "org.yaml" % "snakeyaml" % "1.17",
-  "com.twitter" %% "util-collection" % "6.32.0",
   "org.specs2" %% "specs2-core" % "2.4.16" % "test"
 )
 

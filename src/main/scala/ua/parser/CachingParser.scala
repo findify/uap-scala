@@ -2,11 +2,11 @@ package ua.parser
 
 import java.io.InputStream
 
-import com.twitter.util.LruMap
+import com.google.common.cache.{Cache, CacheBuilder}
 
 case class CachingParser(parser: Parser, size: Int) extends UserAgentStringParser {
-  lazy val clients = new LruMap[String, Client](size)
-  def parse(agent: String) = clients.get(agent).getOrElse {
+  lazy val clients:Cache[String,Client] = CacheBuilder.newBuilder().concurrencyLevel(10).initialCapacity(size).build()
+  def parse(agent: String) = Option(clients.getIfPresent(agent)).getOrElse {
     val client = parser.parse(agent)
     clients.put(agent, client)
     client
